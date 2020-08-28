@@ -1,11 +1,18 @@
 # Eskabore
+---
 
-## (Name)
+ # <p style="text-align: center;">WeeWare</p>
 
- Website project implementing miscellaneous techniques and methods in order to qualitatively optimize ongoing and  forthcoming projects.
+ Is a personal project aiming to:
+ * Showcase some of my skills in programming 
+ * Implementing newly developed concepts and techniques. 
+ * Boost my team-working spirit. 
+ * Serve me remebering complex and sometimes very long processes behind the implementation of packages, websites,....
+
 
 ## Content
 
+1.1
 
 
 ## Goals
