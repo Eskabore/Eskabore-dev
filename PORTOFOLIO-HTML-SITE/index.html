@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+      }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Page Title</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
+    <div class="container">
         <div class="nav-wrapper">
             <div class="left-side">
                 <div class="nav-link-wrapper">
                     <a href="index.html">Home</a>
                 </div>
-                <div class="nav-link-wrapper">
+                    <div class="nav-link-wrapper">
                     <a href="about.html">About</a>
                 </div>
-            </div>
+                </div>
             <div class="right-side">
                 <div class="brand">
                     <div>KAKADI_&_NAZE</div>
@@ -39,8 +50,20 @@
                       </div>
                     </div>
 
-
+/*I am going to implement the footer from here. 
+I would like to part it from the portofolio-wrapper because 
+it is repeateed several times. I put sort of "invisible brackets aroud this very repetitive event */
             
+<div id="footer-content">
+    <div id="contact-info">
+      <ul>
+        <li>Contact Us</li>
+        <li>000-111-333</li>
+        <li>777 Paradise Street, Napoli</li>
+        <li>ITALY, Europe</li>
+      </ul>
+    </div>
+  </div>
 
             <div class="portofolio-item-wrapper">
                 <div class="portofolio-img-background" style="background-image:url(PhotosHD_BerlinUnsplash/mihail-macri-Ev0TwJS5Lh0-unsplash.jpg)"></div>
@@ -176,8 +199,6 @@
 
 
         </div>
-        
-    
 
 </div>
 </div>
@@ -199,69 +220,6 @@ portofolioItems.forEach(portofolioItem => {
             })
         })
 
-</script>
-
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-</style>
-
-<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<script type='text/javascript'>
-	var initESW = function(gslbBaseURL) {
-		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
-
-		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
-		// Settings for Chat
-		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-			// Returns a valid button ID.
-		//};
-		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
-		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-
-		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-		embedded_svc.settings.entryFeature = 'LiveAgent';
-
-		embedded_svc.init(
-			'https://curious-shark-53s32u-dev-ed.my.salesforce.com',
-			'https://kakadinaze-developer-edition.eu32.force.com/liveAgentSetupFlow',
-			gslbBaseURL,
-			'00D5J000000ENIz',
-			'Ibiza2021',
-			{
-				baseLiveAgentContentURL: 'https://c.la2-c2-cdg.salesforceliveagent.com/content',
-				deploymentId: '5725J000000TYKP',
-				buttonId: '5735J000000TYcS',
-				baseLiveAgentURL: 'https://d.la2-c2-cdg.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Ibiza2021',
-				isOfflineSupportEnabled: true
-			}
-		);
-	};
-
-	if (!window.embedded_svc) {
-		var s = document.createElement('script');
-		s.setAttribute('src', 'https://curious-shark-53s32u-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-		s.onload = function() {
-			initESW(null);
-		};
-		document.body.appendChild(s);
-	} else {
-		initESW('https://service.force.com');
-	}
 </script>
 </body>
 
