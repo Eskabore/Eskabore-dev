@@ -139,3 +139,18 @@ au blanc quand on "hover" dessus*/
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
+/*footer styling begins*/
+#footer-content  {
+    background-color:  burlywood};
+
+ #contact-info {
+      color: #ffffff;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 20px 0 40px 0;
+      text-align: center;
+     list-style-type: none;
+      }
+    
+/*footer styling ends*/
